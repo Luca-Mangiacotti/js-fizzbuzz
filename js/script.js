@@ -10,3 +10,33 @@
 // Buon lavoro e buon divertimento!
 
 
+//IMPOSTO UN CICLO CHE STAMPI 100 VOLTE
+for( let i = 1; i <= 100; i++ ){
+
+    //CALCOLO DEL RESTO 
+     const rest1 = i % 3
+     const rest2 = i % 5
+
+     //CONTROLLO SE ENTRAMBI I RESTI SIANO 0 (FIZZBUZZ)
+     if(rest1 === 0 && rest2 === 0){
+
+        console.log("FizzBuzz")
+        }
+    
+    //ALTRIMENTI SE SOLO IL PRIMO RESTO E' 0 (FIZZ)
+    else if (rest1 === 0){
+         console.log("Fizz")
+        }
+        
+    //ALTRIMENTI SE SOLO IL SECONDO RESTO E' 0 (BUZZ)
+    else if (rest2 === 0 ){
+         console.log("Buzz")
+        } 
+
+    //ALTRIMENTI I RESTI SONO DIVERSI DA 0 (STAMPO i)
+     else{
+        console.log(i)
+     }
+}
+
+    
